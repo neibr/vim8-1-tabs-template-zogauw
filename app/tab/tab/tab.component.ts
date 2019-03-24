@@ -10,7 +10,7 @@ export class TabComponent {
     @Output() removeTabEvent: EventEmitter<Tab> = new EventEmitter();
     @Input() tab: Tab;
 
-    removeTab(tab: Tab) {
+    private removeTab(tab: Tab) {
         this.removeTabEvent.emit(tab);
     }
 }
